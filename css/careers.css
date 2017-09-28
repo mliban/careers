@@ -1,3 +1,38 @@
+/* Accessibility */
+a:hover, a:focus {
+    text-decoration: underline;
+}
+a.skip-links-item {
+    font-size: 14px;
+    text-decoration: underline;
+    position: absolute;
+    left: 15px;
+    top: -100px;
+    z-index: 10000;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px 15px;
+    background-color: transparent;
+    color: #ffba00;
+    outline: none;
+    transition: top .2s,background-color .2s;
+}
+
+a.skip-links-item:active,
+a.skip-links-item:focus {
+    top: 0;
+    background-color: #272727;
+}
+
+#skip-links {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin-left: 0;
+    list-style: outside none;
+}
+
 /*Career Pathways*/
 	.currentsection{
       background:#fff;
@@ -1548,6 +1583,7 @@ ul#searchMobile {
 
 .main-content-homepage {
 	padding-top:40px;
+  padding-bottom:200px;
 }
 
 #mainContent {
@@ -3795,13 +3831,14 @@ ul#searchMobile {
         max-width:426px !important;
       }
       .events-list{
-      background: #fff !important
+      background: #fff !important;
+      height:100%;
       }
-      #newBox{
+      .newBox{
         overflow: hidden;
         height:655px;
       }
-      #newBox p{
+      .newBox p{
         padding:16px 16px 0 16px;
       }
       .iconplustext{
